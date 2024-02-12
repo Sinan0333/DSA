@@ -13,10 +13,10 @@ function maxHeap(arr,size,ind){
     const leftInd = 2*ind+1
     const rightInd = 2*ind+2
     let large=ind
-    if(rightInd < size && arr[rightInd]>arr[large]){
+    if(rightInd < size && arr[rightInd]<arr[large]){
         large = rightInd
     }
-    if(leftInd < size && arr[leftInd] > arr[large]){
+    if(leftInd < size && arr[leftInd] < arr[large]){
         large = leftInd
     }
     if(large!==ind){

@@ -128,15 +128,22 @@ class linkedList{
                 currt =  currt.next
             }
         }
-       
+    }
+
+    printRev(node = this.head){
+        if(node.next === null){
+            return node.value
+        }
+      return this.printRev(node.next)
     }
 }
 
 const list = new linkedList()
-list.insert(10,0)
-list.insert(20,0)
-list.insert(30,1)
-let result = list.search(1)
-list.print()
-console.log(result);
+list.append(2)
+list.append(3)
+list.append(5)
+list.append(6)
+list.append(7)
+console.log(list.printRev());
+
 

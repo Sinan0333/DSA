@@ -111,7 +111,7 @@ class binarySearchTree{
 
     deleteNode(root,value){
         if(root == null){
-            return root
+            return root 
         }
         if(root.value > value){
             root.left = this.deleteNode(root.left,value)
@@ -132,8 +132,6 @@ class binarySearchTree{
         }
         return root
     }
-
-
 }
 
 const bts = new binarySearchTree()

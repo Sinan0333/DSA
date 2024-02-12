@@ -10,7 +10,7 @@ class minHeap{
         const endInd = this.arr.length-1
         let leftInd = this.leftChild(curntInd)
         while(endInd >= leftInd){
-            let rightInd = this.leftChild(curntInd)
+            let rightInd = this.rightChild(curntInd)
             let shiftInd;
             if(rightInd <= endInd && this.arr[rightInd]<this.arr[leftInd]){
                 shiftInd=rightInd
@@ -66,7 +66,7 @@ class minHeap{
 
     display(){
         for(let i=0;i<this.arr.length;i++){
-            console.log(this.arr[i]);
+            console.log(i,+"  "+this.arr[i]);
         }
     }
     

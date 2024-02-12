@@ -43,7 +43,7 @@ class linkedList{
     reversePrint(){
         let currt = this.tail
         while(currt){
-            console.log(currt.n);
+            console.log(currt.value);
             currt = currt.prev
         }
     }
